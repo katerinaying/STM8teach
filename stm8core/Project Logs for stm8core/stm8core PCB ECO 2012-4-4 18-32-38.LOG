@@ -1,0 +1,8 @@
+Added Component: Designator=XLAT1(XTAL)
+Added Component: Designator=XLAT2(XTAL)
+Added Pin To Net: NetName=OSCIN Pin=XLAT1-1
+Added Pin To Net: NetName=OSCOUT Pin=XLAT1-2
+Added Pin To Net: NetName=PL2303_OSC2 Pin=XLAT2-1
+Added Pin To Net: NetName=PL2303_OSC1 Pin=XLAT2-2
+Added Member To Class: ClassName=stm8core Member=Component XLAT1 XLAT
+Added Member To Class: ClassName=stm8core Member=Component XLAT2 XLAT
