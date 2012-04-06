@@ -1,4 +1,0 @@
-Change Component Library : Designator=XLAT1 Old Library=slave.SCHLIB New Library=schLIB.SCHLIB
-Change Component Library : Designator=XLAT2 Old Library=slave.SCHLIB New Library=schLIB.SCHLIB
-Added Pin To Net: NetName=OSCOUT Pin=XLAT1-2
-Added Pin To Net: NetName=PL2303_OSC1 Pin=XLAT2-2
