@@ -1,0 +1,39 @@
+= `mkbok` - make book using markdown
+
+{<img src="https://secure.travis-ci.org/larrycai/mkbok.png" />}[http://travis-ci.org/larrycai/mkbok]
+
+Author:: Vincent Chen (mailto:laser5295@gmail.com)
+
+Copyright:: Copyright (c) 2012 by  Larry Cai
+License:: Distributes under the Apache License 2.0, see LICENSE in the source distro
+
+This application generate ebooks (.pdf,.epub,.mobi) from markdown plaintext files
+
+== Install
+
+Install:
+    gem install mkbok
+
+== Usage
+
+Create new project:
+    mkbok --generate sample # generate new book template based on kaiyuanbook
+    mkbok --build # needs pandoc,XeTex packages
+    
+For more help:
+    mkbok --help
+    
+=== Todo
+
+Build over web
+    mkbok build --web http://mkbok.com/diy # it will zip file and upload to web
+    mkbok build --web http://mkbok.com/ --source http://github.com/larrycai/mkbok # generate pdf from github    
+
+== Developing for `mkbok`
+
+First, install bundler:
+    gem install bundler
+
+Get the development dependencies
+    bundle install
+Most of the code is in `mkbok.rb`.
