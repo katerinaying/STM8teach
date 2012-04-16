@@ -19,10 +19,14 @@
 因为正好在上一个排版课程，要做一个封面，就趁这个机会一举两得了:)本手册封面是用COREDRAW设计的。
 
 ### 项目地址 ###
-本次STM8学习项目托管在github上，并且项目完全开源。欢迎大家访问：[www.github.com/vincent5295/stm8teach](www.github.com/vincent5295/stm8teach)
+本次STM8学习项目托管在github上，并且项目完全开源。欢迎大家访问：www.github.com/vincent5295/stm8teach
 
 ## 如何写作本书的 ##
-本手册是使用MARKDOWN格式写作的，感谢larrycai的[mkbok项目](www.github.com/larrycai/mkbok)。
+本书也是用敏捷的方式来写作的，我在Windows（希望早日能用MBA）用Notepad++编辑器用Markdown的文本文件写内容，然后在共享目录的虚拟机中，一个命令生成所有的其他格式（如PDF、mobi、epub）；Git是我使用的版本控制系统。
+
+本地测试通过后，我会提交到github中去，同时架设了持续集成服务器，会对我最新内容再次检测，自动产生电子书。
+
+这些你都可以在后面学到，啰嗦了。
 
 ## 致谢 ##
 在本手册的编写过程中，有很多同学

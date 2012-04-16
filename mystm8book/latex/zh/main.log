@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (TeX Live 2011) (format=xelatex 2011.12.22)  9 APR 2012 00:07
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (TeX Live 2011) (format=xelatex 2011.12.22)  17 APR 2012 00:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -803,33 +803,25 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 ut line 181.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 182.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 182.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 182.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 182.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 182.
 
 (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2010/03/01 v1.8 stringenc: Printable ASCII characters
 )
+Overfull \hbox (12.50137pt too wide) in paragraph at lines 216--217
+[]\EU1/ARPLSungtiLGB(0)/m/n/10 本 次 STM8 学 习 项 目 托 管 在 github 
+上， 并 且 项 目 完 全 开 源。 欢 迎 大 家 访 问：[][]www.git
+hub.com/
+ []
+
 [1
 
 
-] [2
-
-]
-Missing character: There is no 啰 in font AR PL SungtiL GB/ICU:mapping=tex-tex
-t;!
- [1
 
 ] [2] (latex/zh/main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
  [3
 
 ])
@@ -838,36 +830,44 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [4]
 Chapter 1.
-
-Overfull \hbox (32.80121pt too wide) in paragraph at lines 272--273
-[]\EU1/ARPLSungtiLGB(0)/m/n/10 首 先 书 的 内 容 是 用 Markdown 格 式
- 写 的。 Markdown 格 式 的 普 及 要 归 功 于[][]Github[][]和[][]St
-ackOverflow[][]。
- []
-
 [1
 
 
-] [2] [3] [4
+] [2
 
 ]
 Chapter 2.
-[5] [6] [7] [8
+[3] [4] [5] [6
 
 ]
 Chapter 3.
 (latex/zh/main.fot)
 \openout3 = `main.fot'.
 
- [9] [10] [11] [12] [13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 762--762
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 381.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 381.
+ [7] [8] [9] [10] [11] [12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 655--655
 []\EU1/WenQuanYiZenHeiMono(0)/m/n/8 \begin{itemize} \setlength{\itemsep} {1pt} 
 \setlength{\parskip} {0pt} \setlength{\parsep} {0pt}
  []
 
-[16]
+[14] [15] [16
+
+]
+Chapter 4.
+
+Overfull \hbox (32.80121pt too wide) in paragraph at lines 688--689
+[]\EU1/ARPLSungtiLGB(0)/m/n/10 首 先 书 的 内 容 是 用 Markdown 格 式
+ 写 的。 Markdown 格 式 的 普 及 要 归 功 于[][]Github[][]和[][]St
+ackOverflow[][]。
+ []
+
+[17] [18]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 782.
- [17]
+ [19]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 782.
  (latex/zh/main.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 782.
@@ -875,12 +875,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 782.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 782.
  ) 
 Here is how much of TeX's memory you used:
- 17402 strings out of 494150
- 288365 string characters out of 3152948
- 405545 words of memory out of 3000000
- 20436 multiletter control sequences out of 15000+200000
- 7512 words of font info for 54 fonts, out of 3000000 for 9000
+ 17385 strings out of 494150
+ 288079 string characters out of 3152948
+ 408249 words of memory out of 3000000
+ 20428 multiletter control sequences out of 15000+200000
+ 5655 words of font info for 44 fonts, out of 3000000 for 9000
  1018 hyphenation exceptions out of 8191
- 53i,13n,92p,721b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,13n,92p,773b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on latex/zh/main.pdf (23 pages).

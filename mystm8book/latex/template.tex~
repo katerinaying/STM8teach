@@ -178,7 +178,7 @@
 \linespread{1.3}
 
 \begin{document}
-%\maketitle
+\maketitle
 \thispagestyle{empty}
 \setcounter{tocdepth}{4}
 

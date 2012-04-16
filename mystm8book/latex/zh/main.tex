@@ -47,7 +47,7 @@
 \settowidth{\parindent}{文文}
 \setcounter{footnote}{0}
 
-\title{{跟我学开源技术书}}
+\title{{跟我学STM8}}
 \author{Larry Cai}
 
 \makeatletter
@@ -60,7 +60,7 @@
 
 \title{\huge{\savedtitle}}
 
-\author{\textbf{\savedauthor}\thanks{This is the PDF file for the how to write opensource book contents. It is licensed under the Creative Commons Attribution-Non Commercial-Share Alike 3.0 license. I hope you enjoy it, I hope it helps you learn the software development, and I hope you'll continuously watch this : \url{http://github.com/larrycai/kaiyuanbook}, will be happy if you follow my weibo \url{http://weibo.com/larrycaiyu}, and if you want to donate, please visit: \url{https://me.alipay.com/larrycai}}}
+\author{\textbf{\savedauthor}\thanks{}}
 \def\w3cdtfymd{\the\year-\ifnum\month<10 0\fi\the\month-\ifnum\day<10 0\fi\the\day}
 \date{\w3cdtfymd}
 %\renewcommand{\thefootnote}{\fnsymbol{footnote}}
@@ -179,7 +179,7 @@
 \linespread{1.3}
 
 \begin{document}
-\maketitle
+%\maketitle
 \thispagestyle{empty}
 \setcounter{tocdepth}{4}
 
@@ -187,19 +187,11 @@
 \chapter*{前言}
 \addcontentsline{toc}{chapter}{前言}
 
-互联网是自由、开放、分享、平等的世界。开源软件已经深入人心，并也形成了极好的商业模式。
-
-我们为什么不能把开源技术书做成像开源软件一样呢？
-
-这本小册子就用60页左右的内容把开源技术书的几个方面介绍一下，使得你也能写出你的开源技术书。
-
-\subsection*{背景}
-
-值得码字处。
+说起这本手册的起因，是我去年6月做项目时上时碰到STM8这块芯片。这块芯片性能很强大，但是当时缺少对应的教材。当时我全靠着ST的英文文档，看得比较累。空下来就想，如果能有本教材就好了。毕设选题的时候想到了这件事，就干脆自己写本教材。然后在看一篇博客的时候，看到某大牛，他自身的技术积淀已经很强了，网上最流行的中文makefile教程就是他写的。他写的博文我经常看，感觉很有深度。清华大学出版社出版的两本教材都大段抄袭他的博文（最后被其投诉，并得到了赔偿），他说过这么一句话：“45岁之前绝不出书”，因为他觉得只有到了那个时候，自己才可能得到足够的积淀。能够出的了精品。和他比起来，我又怎敢妄称出书呢？ 在惠普以及爱立信的实习过程中，我接触了很多软件方面好用的工具，成熟的软件工程思想。比如说git，就是非常好的版本控制管理软件，比如说agile，消除了传统软件开发过程中的部分问题。我觉得，软件开发中的诸多问题，随着编程规模的扩大，参与人数的增多，在硬件开发中也会逐步地体现出来。所以，这些工具及思想方式引入到嵌入式编程，将是一种趋势。本手册亦不指望能够引领什么潮流，只希望能对STM8的学习者，有一个有益的指导，仅此而已。
 
 \subsection*{适合的对象}
 
-主要针对爱分享的技术爱好者，也适合编辑老师们了解Geek是怎么玩书的。
+本书适合于单片机爱好者，阅读本手册之前需要学习过C语言，AVR或是51单片机，最好有一定的项目实践经验。本手册不是官方数据手册的汉化并简单堆砌，本手册旨在对读者的嵌入式编程实践提供一定的有益指导，本手册针对的芯片是STM8，会大致介绍其架构，重点在于针对。
 
 \section*{本书结构}
 
@@ -217,21 +209,19 @@
 \end{itemize}
 \subsection*{封面}
 
-因为自己爱好设计排版，就自己DIY了一下，封面是随手找到的矢量卡通图，并用Windows PowerPoint制作完成。
+因为正好在上一个排版课程，要做一个封面，就趁这个机会一举两得了:)本手册封面是用COREDRAW设计的。
+
+\subsection*{项目地址}
+
+本次STM8学习项目托管在github上，并且项目完全开源。欢迎大家访问：\href{www.github.com/vincent5295/stm8teach}{www.github.com/vincent5295/stm8teach}
 
 \section*{如何写作本书的}
 
-本书也是用敏捷的方式来写作的，我在Windows（希望早日能用MBA）用Notepad++编辑器用Markdown的文本文件写内容，然后在共享目录的虚拟机中，一个命令生成所有的其他格式（如PDF、mobi、epub）；Git是我使用的版本控制系统。
-
-本地测试通过后，我会提交到github中去，同时架设了持续集成服务器，会对我最新内容再次检测，自动产生电子书。
-
-这些你都可以在后面学到，啰嗦了。
+本手册是使用MARKDOWN格式写作的，感谢larrycai的\href{www.github.com/larrycai/mkbok}{mkbok项目}。
 
 \section*{致谢}
 
-特别感谢\ldots{}。
-
-感谢..对本书做了早期的审阅。
+在本手册的编写过程中，有很多同学
 
 \tableofcontents\newpage\thispagestyle{empty}
 
@@ -249,113 +239,16 @@
 \pagestyle{fancy}
 
 \mainmatter
-\chap{基础知识和10分钟写出第一本开源书}
+\chap{使用C语言开发}
 
-\section{先从Pro Git说起}
+\section{一个测试}
 
-如果你了解Git，或者想了解Git。那么你就应该知道\href{http://progit.org/}{Pro Git}，它是Git的书中写得最好的一本（至少是之一），可是你是否知道它有网络中文版，而且能在iPad上极其漂亮得阅读。并且是免费的，不是盗版的免费！如果你想要最新的，你甚至可以自己生成它。哈哈，我就是这么干的。
+刚说到C语言，可能你还不以为然。这种语言应该在大一大二就会了吧，似乎当时考试的分数还不低。但是，你究竟有没有真正懂得C语言呢？让我们先来做一个测试吧！
 
-这一切就归功于开源社区和它后面用到的技术。
+下面是一些开发方面的问题：你有没有使用vim写过一个50行以上的小程序？你有没有使用过gcc编译，再用gdb调试过程序？你有没有写过一个makefile，写好程序后敲一个make，编译、测试、安装或者更多的东西一键搞定。当然如果作为大的软件项目来说，版本控制系统自然是少不了的，那么你有没有使用过Git、CVS、SVN之类的工具，对项目的代码checkin、checkoout、merge、revert？
 
-\subsection{开源书}
+关于进一步学习C语言的资料，我推荐下列三本书：\href{http://www.amazon.cn/C\%E7\%A8\%8B\%E5\%BA\%8F\%E8\%AE\%BE\%E8\%AE\%A1\%E8\%AF\%AD\%E8\%A8\%80-\%E5\%85\%8B\%E5\%B0\%BC\%E6\%B1\%89/dp/B0011C9OMG/ref=sr\_1\_1?ie=UTF8\&qid=1334586907\&sr=8-1}{C程序设计语言}、\href{http://www.amazon.cn/C\%E5\%92\%8CC-\%E7\%BB\%8F\%E5\%85\%B8\%E8\%91\%97\%E4\%BD\%9C\%E2\%80\%A2C\%E4\%B8\%93\%E5\%AE\%B6\%E7\%BC\%96\%E7\%A8\%8BExpert-C-Programming-Deep-C-Secrets-Peter-Van-Der-Linden/dp/B0012NIW9K/ref=sr\_1\_1?s=books\&ie=UTF8\&qid=1334587029\&sr=1-1}{C专家编程}、\href{http://www.amazon.cn/C\%E5\%92\%8CC-\%E7\%BB\%8F\%E5\%85\%B8\%E8\%91\%97\%E4\%BD\%9C\%E2\%80\%A2C\%E9\%99\%B7\%E9\%98\%B1\%E4\%B8\%8E\%E7\%BC\%BA\%E9\%99\%B7-Andrew-Koenig/dp/B0012NIW72/ref=pd\_sim\_b\_1}{C陷阱与缺陷}。
 
-这里我不用多讲，开源书就像其他的开源产品（如维基百科）一样，只要是开放的，社区就有人会贡献。\href{http://progit.org/}{Pro Git}的作者Scott很慷慨得把书的内容全部共享在\href{http://github.com/progit/progit}{github/progit}库中，使用得是\href{http://creativecommons.org/licenses/by-nc-sa/3.0/us/}{CC BY-NC-SA 3.0}。
-
-Scott只负责英文版，其他许许多多语言的翻译都是社区贡献的，中文翻译相当有质量，你可以在线读\href{http://progit.org/book/zh/}{Pro Git中文版}。
-
-\subsection{开源技术生成电子书}
-
-这本书不仅仅开源了内容，使用的技术也是开源的。让我们看看他是怎么做的。
-
-\subsection{Markdown原始文件}
-
-首先书的内容是用Markdown格式写的。Markdown格式的普及要归功于\href{github.com}{Github}和\href{http://stackoverflow.com/}{StackOverflow}。因为它们越来越流行，它们支持Markdown格式也越来越流行。这里要赞一个的是，国内的\href{http://www.ituring.com.cn/}{图灵社区}也支持Markdown，用起来超级方便。
-
-简单来说，Markdown格式的文件看着像一般的文本文件，里面只是加了很少的格式标记，因此看文本文件也不影响理解，这种格式也有很多工具帮你去转化，而且很容易自动化解决。并且这些技术大多数是开源或免费的。
-
-松本行弘在他的Ruby书中说的好，想象一下几十年后，你是否还能找到软件来打开你的Word老格式的文档，没有那些软件，你的文档也就没用了。文本文件就没有这个问题。
-
-你可以直接看一下【Pro Git】的\href{https://raw.github.com/progit/progit/master/zh/01-introduction/01-chapter1.markdown}{“第一章 介绍” 的Markdown原始文件}，顺便看看github自动生成的简单\href{https://github.com/progit/progit/blob/master/zh/01-introduction/01-chapter1.markdown}{“第一章 介绍” 的html}。
-
-\section{产生电子书}
-
-\subsection{PDF格式}
-
-为了能达到出版的质量，Latex是一个常用的格式，PDF也能很容易地转换出来，有关Latex，自己看看参考链接学习吧。
-
-\href{http://johnmacfarlane.net/pandoc/}{Pandoc}能帮着从Markdown转换出Latex格式，然后再用\href{http://www.tug.org/texlive/}{TexLive}软件中的{\texttt{xelatex}}转成PDF格式。
-
-\subsection{Epub/Mobi格式}
-
-Ruby的\href{https://github.com/rtomayko/rdiscount}{rdiscount}能帮你从markdown转成html格式，然后有\href{calibre}{Calibre}附带的命令{\texttt{ebook-convert}}生成最终的{\texttt{.mobi}} (Kindle) 和 {\texttt{.epub}} (iPad)。
-
-从1.8版本开始，Pandoc也开始支持生成Epub格式了。
-
-\section{工作环境}
-
-你只需要一台Linux机器（虚拟机就可以了）和熟悉简单的Linux命令就可以试验了。有Git和Ruby的知识那就更方便了。
-
-我用的试验环境是Ubuntu Oneiric (11.10）
-
-\subsection{下载中文开源书}
-
-很简单，{\texttt{git clone}}一下这本书就可以了，下载它的源文件包我觉得还是烦了点。
-
-{\footnotesize\begin{shaded}\begin{verbatim}
-$ git clone git@github.com/larrycai/kaiyuanbook.git
-\end{verbatim}\end{shaded}}
-\subsection{PDF格式}
-
-生成PDF是一个比较复杂的东西，\href{http://johnmacfarlane.net/pandoc/}{pandoc}用Ubuntu库里1.8.x版本，\href{http://www.tug.org/texlive/}{TexLive}用缺省Ubuntu源里的2009版也够了。当然也可下载最新的\href{http://www.tug.org/texlive/}{TexLive}包安装，并配置到搜索路径中。
-
-{\footnotesize\begin{shaded}\begin{verbatim}
-$ sudo apt-get install ruby1.9.1
-$ sudo apt-get install pandoc
-$ sudo apt-get install texlive-xetex
-$ sudo apt-get install texlive-latex-recommended # 主要的Latex包
-$ sudo apt-get install texlive-latex-extra # titlesec包，先不用知道
-\end{verbatim}\end{shaded}}
-因为是中文PDF，需要把字体嵌入在文件中，因此需要安装字体文件，幸运的是在源里有不错的字体。
-
-{\footnotesize\begin{shaded}\begin{verbatim}
-$ sudo apt-get install ttf-arphic-gbsn00lp ttf-arphic-ukai # 文鼎字体
-$ sudo apt-get install ttf-wqy-microhei ttf-wqy-zenhei # 文泉驿字体
-\end{verbatim}\end{shaded}}
-现在你就可以用{\texttt{mkbok}}命令生成Pdf文件了，{\texttt{mkbok}}会自动调用Pandoc和Latex工具生成Pdf、Html、Epub格式。
-
-{\footnotesize\begin{shaded}\begin{verbatim}
-$ ./mkbok	
-\end{verbatim}\end{shaded}}
-怎么样，打开看看Pdf文件，很漂亮了吧。
-
-\section{自己试试}
-
-一定要做，搜索一下，改掉一些内容，再运行一遍。
-
-好了，你可以把书扔到一遍，写你自己的书了。照样画葫芦，你行的。在下一章会对书的结构和怎么对应地用Markdown写进行详细地解释。
-
-\section{其他常用的格式}
-
-计算机类图书对格式要求不是很多，图文、章节、源代码基本就够了，就算有些复杂公式，也可用图来显示。这也从理论上说明，它不需要复杂的格式。现在对这类技术书出版我的理解主要有几种：
-
-\begin{enumerate}\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}
-\item
-  Microsoft的Word格式，虽然国内出版界如日中天，缺省就认它（对技术没追求，鄙视）。简单好学，但是不擅长自动化，是开源的死敌。
-\item
-  Latex格式（就是Donald E. Knuth（高德纳）发明的，这是很棒的东西，特别适合学术类的各种复杂的公式等，不过学习曲线很高，直接写还是很有难度的。国内也只有几家学术期刊使用。
-\item
-  Docbook格式是最有名的（从SGML演化过来？），Orielly和Pragmatic出版社缺省就用它，它能 很方便的转化出出版要的各种样式。如\href{http://www.wakaleo.com/books/jenkins-the-definitive-guide}{Jenkins - the definition guide}开源书就是采用Docbook。但由于是XML格式，很多人不习惯，而且多人网上协作不是很方便。
-\item
-  通过蒋鑫的\href{http://www.worldhello.net/gotgithub/}{Got Github}开源书，我也了解reStructureText也是和Markdown差不多纯文本的，也是蛮流行的。
-\end{enumerate}
-\section{参考}
-
-\begin{enumerate}\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}
-\item
-  Pro Git: \url{http://progit.org/}
-\item
-  LaTeX2e完全学习手册: \url{http://book.douban.com/subject/5450816/}
-\end{enumerate}
 \chap{用Markdown来写}
 
 希望你已经照着上一章生成出了第一个Pdf文件，看到了一本蛮标准的书的样子。
@@ -771,6 +664,113 @@ $ fc-list :lang=zh | grep Adobe
   LATEX2e完全学习手册：\url{http://product.china-pub.com/54569}
 \item
   XeTeX: \url{http://scripts.sil.org/xetex}
+\end{enumerate}
+\chap{基础知识和10分钟写出第一本开源书}
+
+\section{先从Pro Git说起}
+
+如果你了解Git，或者想了解Git。那么你就应该知道\href{http://progit.org/}{Pro Git}，它是Git的书中写得最好的一本（至少是之一），可是你是否知道它有网络中文版，而且能在iPad上极其漂亮得阅读。并且是免费的，不是盗版的免费！如果你想要最新的，你甚至可以自己生成它。哈哈，我就是这么干的。
+
+这一切就归功于开源社区和它后面用到的技术。
+
+\subsection{开源书}
+
+这里我不用多讲，开源书就像其他的开源产品（如维基百科）一样，只要是开放的，社区就有人会贡献。\href{http://progit.org/}{Pro Git}的作者Scott很慷慨得把书的内容全部共享在\href{http://github.com/progit/progit}{github/progit}库中，使用得是\href{http://creativecommons.org/licenses/by-nc-sa/3.0/us/}{CC BY-NC-SA 3.0}。
+
+Scott只负责英文版，其他许许多多语言的翻译都是社区贡献的，中文翻译相当有质量，你可以在线读\href{http://progit.org/book/zh/}{Pro Git中文版}。
+
+\subsection{开源技术生成电子书}
+
+这本书不仅仅开源了内容，使用的技术也是开源的。让我们看看他是怎么做的。
+
+\subsection{Markdown原始文件}
+
+首先书的内容是用Markdown格式写的。Markdown格式的普及要归功于\href{github.com}{Github}和\href{http://stackoverflow.com/}{StackOverflow}。因为它们越来越流行，它们支持Markdown格式也越来越流行。这里要赞一个的是，国内的\href{http://www.ituring.com.cn/}{图灵社区}也支持Markdown，用起来超级方便。
+
+简单来说，Markdown格式的文件看着像一般的文本文件，里面只是加了很少的格式标记，因此看文本文件也不影响理解，这种格式也有很多工具帮你去转化，而且很容易自动化解决。并且这些技术大多数是开源或免费的。
+
+松本行弘在他的Ruby书中说的好，想象一下几十年后，你是否还能找到软件来打开你的Word老格式的文档，没有那些软件，你的文档也就没用了。文本文件就没有这个问题。
+
+你可以直接看一下【Pro Git】的\href{https://raw.github.com/progit/progit/master/zh/01-introduction/01-chapter1.markdown}{“第一章 介绍” 的Markdown原始文件}，顺便看看github自动生成的简单\href{https://github.com/progit/progit/blob/master/zh/01-introduction/01-chapter1.markdown}{“第一章 介绍” 的html}。
+
+\section{产生电子书}
+
+\subsection{PDF格式}
+
+为了能达到出版的质量，Latex是一个常用的格式，PDF也能很容易地转换出来，有关Latex，自己看看参考链接学习吧。
+
+\href{http://johnmacfarlane.net/pandoc/}{Pandoc}能帮着从Markdown转换出Latex格式，然后再用\href{http://www.tug.org/texlive/}{TexLive}软件中的{\texttt{xelatex}}转成PDF格式。
+
+\subsection{Epub/Mobi格式}
+
+Ruby的\href{https://github.com/rtomayko/rdiscount}{rdiscount}能帮你从markdown转成html格式，然后有\href{calibre}{Calibre}附带的命令{\texttt{ebook-convert}}生成最终的{\texttt{.mobi}} (Kindle) 和 {\texttt{.epub}} (iPad)。
+
+从1.8版本开始，Pandoc也开始支持生成Epub格式了。
+
+\section{工作环境}
+
+你只需要一台Linux机器（虚拟机就可以了）和熟悉简单的Linux命令就可以试验了。有Git和Ruby的知识那就更方便了。
+
+我用的试验环境是Ubuntu Oneiric (11.10）
+
+\subsection{下载中文开源书}
+
+很简单，{\texttt{git clone}}一下这本书就可以了，下载它的源文件包我觉得还是烦了点。
+
+{\footnotesize\begin{shaded}\begin{verbatim}
+$ git clone git@github.com/larrycai/kaiyuanbook.git
+\end{verbatim}\end{shaded}}
+\subsection{PDF格式}
+
+生成PDF是一个比较复杂的东西，\href{http://johnmacfarlane.net/pandoc/}{pandoc}用Ubuntu库里1.8.x版本，\href{http://www.tug.org/texlive/}{TexLive}用缺省Ubuntu源里的2009版也够了。当然也可下载最新的\href{http://www.tug.org/texlive/}{TexLive}包安装，并配置到搜索路径中。
+
+{\footnotesize\begin{shaded}\begin{verbatim}
+$ sudo apt-get install ruby1.9.1
+$ sudo apt-get install pandoc
+$ sudo apt-get install texlive-xetex
+$ sudo apt-get install texlive-latex-recommended # 主要的Latex包
+$ sudo apt-get install texlive-latex-extra # titlesec包，先不用知道
+\end{verbatim}\end{shaded}}
+因为是中文PDF，需要把字体嵌入在文件中，因此需要安装字体文件，幸运的是在源里有不错的字体。
+
+{\footnotesize\begin{shaded}\begin{verbatim}
+$ sudo apt-get install ttf-arphic-gbsn00lp ttf-arphic-ukai # 文鼎字体
+$ sudo apt-get install ttf-wqy-microhei ttf-wqy-zenhei # 文泉驿字体
+\end{verbatim}\end{shaded}}
+现在你就可以用{\texttt{mkbok}}命令生成Pdf文件了，{\texttt{mkbok}}会自动调用Pandoc和Latex工具生成Pdf、Html、Epub格式。
+
+{\footnotesize\begin{shaded}\begin{verbatim}
+$ ./mkbok	
+\end{verbatim}\end{shaded}}
+怎么样，打开看看Pdf文件，很漂亮了吧。
+
+\section{自己试试}
+
+一定要做，搜索一下，改掉一些内容，再运行一遍。
+
+好了，你可以把书扔到一遍，写你自己的书了。照样画葫芦，你行的。在下一章会对书的结构和怎么对应地用Markdown写进行详细地解释。
+
+\section{其他常用的格式}
+
+计算机类图书对格式要求不是很多，图文、章节、源代码基本就够了，就算有些复杂公式，也可用图来显示。这也从理论上说明，它不需要复杂的格式。现在对这类技术书出版我的理解主要有几种：
+
+\begin{enumerate}\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}
+\item
+  Microsoft的Word格式，虽然国内出版界如日中天，缺省就认它（对技术没追求，鄙视）。简单好学，但是不擅长自动化，是开源的死敌。
+\item
+  Latex格式（就是Donald E. Knuth（高德纳）发明的，这是很棒的东西，特别适合学术类的各种复杂的公式等，不过学习曲线很高，直接写还是很有难度的。国内也只有几家学术期刊使用。
+\item
+  Docbook格式是最有名的（从SGML演化过来？），Orielly和Pragmatic出版社缺省就用它，它能 很方便的转化出出版要的各种样式。如\href{http://www.wakaleo.com/books/jenkins-the-definitive-guide}{Jenkins - the definition guide}开源书就是采用Docbook。但由于是XML格式，很多人不习惯，而且多人网上协作不是很方便。
+\item
+  通过蒋鑫的\href{http://www.worldhello.net/gotgithub/}{Got Github}开源书，我也了解reStructureText也是和Markdown差不多纯文本的，也是蛮流行的。
+\end{enumerate}
+\section{参考}
+
+\begin{enumerate}\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}
+\item
+  Pro Git: \url{http://progit.org/}
+\item
+  LaTeX2e完全学习手册: \url{http://book.douban.com/subject/5450816/}
 \end{enumerate}
 
 
