@@ -187,11 +187,15 @@
 \chapter*{前言}
 \addcontentsline{toc}{chapter}{前言}
 
-说起这本手册的起因，是我去年6月做项目时上时碰到STM8这块芯片。这块芯片性能很强大，但是当时缺少对应的教材。当时我全靠着ST的英文文档，看得比较累。空下来就想，如果能有本教材就好了。毕设选题的时候想到了这件事，就干脆自己写本教材。然后在看一篇博客的时候，看到某大牛，他自身的技术积淀已经很强了，网上最流行的中文makefile教程就是他写的。他写的博文我经常看，感觉很有深度。清华大学出版社出版的两本教材都大段抄袭他的博文（最后被其投诉，并得到了赔偿），他说过这么一句话：“45岁之前绝不出书”，因为他觉得只有到了那个时候，自己才可能得到足够的积淀。能够出的了精品。和他比起来，我又怎敢妄称出书呢？ 在惠普以及爱立信的实习过程中，我接触了很多软件方面好用的工具，成熟的软件工程思想。比如说git，就是非常好的版本控制管理软件，比如说agile，消除了传统软件开发过程中的部分问题。我觉得，软件开发中的诸多问题，随着编程规模的扩大，参与人数的增多，在硬件开发中也会逐步地体现出来。所以，这些工具及思想方式引入到嵌入式编程，将是一种趋势。本手册亦不指望能够引领什么潮流，只希望能对STM8的学习者，有一个有益的指导，仅此而已。
+说起这本手册的起因，是我去年6月做项目时上时碰到STM8这块芯片。这块芯片性能很强大，但是当时缺少对应的教材。当时我全靠着ST的英文文档，看得比较累。空下来就想，如果能有本教材就好了。毕设选题时，因为自己也做过一些研发类的项目，想换种形式，想到了这件事，就决定干脆自己写本教材。 然后在看一篇博客的时候，看到某大牛，他自身的技术积淀已经很强了，网上最流行的中文makefile教程就是他写的。他写的博文我经常看，感觉很有深度。清华大学出版社出版的两本教材都大段抄袭他的博文（最后被其投诉，并得到了赔偿），他说过这么一句话：“45岁之前绝不出书”，因为他觉得只有到了那个时候，自己才可能得到足够的积淀。能够出的了精品。和他比起来，我又怎敢妄称出书呢？ 在惠普以及爱立信的实习过程中，我接触了很多软件方面好用的工具，成熟的软件工程思想。比如说git，就是非常好的版本控制管理软件，比如说agile，消除了传统软件开发过程中的部分问题。我觉得，软件开发中的诸多问题，随着编程规模的扩大，参与人数的增多，在硬件开发中也会逐步地体现出来。所以，这些工具及思想方式引入到嵌入式编程，将是一种趋势。本手册亦不指望能够引领什么潮流，只希望能对STM8的学习者，有一个有益的指导，仅此而已。
+
+\subsection*{你不能从本手册中获得}
+
+本手册不是官方数据手册的汉化并堆砌，故详细的硬件寄存器资源及软件库函数说明并不能从中得到。同样关于程序语言的章节也不会提供过多C语言的细节。但以上这些在相关章节都会提到相应资源的方法，并且提供经验上的参考。
 
 \subsection*{适合的对象}
 
-本书适合于单片机爱好者，阅读本手册之前需要学习过C语言，AVR或是51单片机，最好有一定的项目实践经验。本手册不是官方数据手册的汉化并简单堆砌，本手册旨在对读者的嵌入式编程实践提供一定的有益指导，本手册针对的芯片是STM8，会大致介绍其架构，重点在于针对。
+本手册适合具有C语言功底，并能在51或AVR上进行简单程序设计的单片机爱好者。
 
 \section*{本书结构}
 
@@ -199,17 +203,17 @@
 \item[*]
   第一章：前言
 \item[*]
-  第二章：基础知识和10分钟写出第一本开源书
+  第二章：重读C语言及一些软件开发工具介绍
 \item[*]
-  第三章：Markdown格式
+  第三章：STM8芯片资源简介
 \item[*]
-  第四章：Latex简介
+  第四章：STM8官方软件库简介
 \item[*]
-  第五章：其他。。
+  第五章：STM8S编程实战
 \end{itemize}
-\subsection*{封面}
+\subsection*{封面及封底}
 
-因为正好在上一个排版课程，要做一个封面，就趁这个机会一举两得了:)本手册封面是用COREDRAW设计的。
+因为自己喜欢排版，就自己设计了一个。封面封底的图片都是取景自华师大校园的风景，本手册封面、封底都是使用COREDRAW设计的。
 
 \subsection*{项目地址}
 
@@ -221,7 +225,7 @@
 
 \section*{致谢}
 
-在本手册的编写过程中，有很多同学
+在本手册的编写过程中，遇到很多困难。在此要感谢各位老师同学在本项目的实践过程中，对本人给予的无私帮助。
 
 \tableofcontents\newpage\thispagestyle{empty}
 
@@ -636,13 +640,13 @@ $ fc-list :lang=zh | grep Adobe
 只可惜现在正文在产生PDF时没有一种字体是有完美表现的。
 
 \begin{enumerate}\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}
-\item
+\item[*]
   文鼎贡献的字体中台湾字形的细上海宋的句号在中间，出来的效果不伦不类的。
-\item
+\item[*]
   文鼎贡献的字体中大陆字形的简中楷和简报宋，标点符号的位置是对的，但是当碰到条目（Item）的时候条目的点没能显示出来。
-\item
+\item[*]
   Adobe的宋体，条目的时候显示一个田子框，很难看。
-\item
+\item[*]
   文泉驿的点阵宋体老是转化Latex时出错，搞不定。
 \end{enumerate}
 2、3 条目的问题，我hack成其他字符（*）显示就没问题了（如下），不知道缺省的圆点为啥显示不对。\url{http://wiki.ctex.org/index.php/LaTeX/%E5%88%97%E8%A1%A8}，现在就用文鼎的细上海宋了。
@@ -656,13 +660,13 @@ $ fc-list :lang=zh | grep Adobe
 \section{参考}
 
 \begin{enumerate}\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}
-\item
+\item[*]
   \url{http://share.chinatex.org/}
-\item
+\item[*]
   \url{http://latex.yo2.cn/articles/latex-introduction0.html}
-\item
+\item[*]
   LATEX2e完全学习手册：\url{http://product.china-pub.com/54569}
-\item
+\item[*]
   XeTeX: \url{http://scripts.sil.org/xetex}
 \end{enumerate}
 \chap{基础知识和10分钟写出第一本开源书}
@@ -755,21 +759,21 @@ $ ./mkbok
 计算机类图书对格式要求不是很多，图文、章节、源代码基本就够了，就算有些复杂公式，也可用图来显示。这也从理论上说明，它不需要复杂的格式。现在对这类技术书出版我的理解主要有几种：
 
 \begin{enumerate}\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}
-\item
+\item[*]
   Microsoft的Word格式，虽然国内出版界如日中天，缺省就认它（对技术没追求，鄙视）。简单好学，但是不擅长自动化，是开源的死敌。
-\item
+\item[*]
   Latex格式（就是Donald E. Knuth（高德纳）发明的，这是很棒的东西，特别适合学术类的各种复杂的公式等，不过学习曲线很高，直接写还是很有难度的。国内也只有几家学术期刊使用。
-\item
+\item[*]
   Docbook格式是最有名的（从SGML演化过来？），Orielly和Pragmatic出版社缺省就用它，它能 很方便的转化出出版要的各种样式。如\href{http://www.wakaleo.com/books/jenkins-the-definitive-guide}{Jenkins - the definition guide}开源书就是采用Docbook。但由于是XML格式，很多人不习惯，而且多人网上协作不是很方便。
-\item
+\item[*]
   通过蒋鑫的\href{http://www.worldhello.net/gotgithub/}{Got Github}开源书，我也了解reStructureText也是和Markdown差不多纯文本的，也是蛮流行的。
 \end{enumerate}
 \section{参考}
 
 \begin{enumerate}\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}
-\item
+\item[*]
   Pro Git: \url{http://progit.org/}
-\item
+\item[*]
   LaTeX2e完全学习手册: \url{http://book.douban.com/subject/5450816/}
 \end{enumerate}
 

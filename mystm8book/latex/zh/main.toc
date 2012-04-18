@@ -1,5 +1,5 @@
 \contentsline {chapter}{前言}{i}{chapter*.1}
-\contentsline {chapter}{目录}{iii}{chapter*.2}
+\contentsline {chapter}{目录}{iii}{section*.3}
 \contentsline {chapter}{\numberline {1}使用C语言开发}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}一个测试}{1}{section.1.1}
 \contentsline {chapter}{\numberline {2}用Markdown来写}{3}{chapter.2}
