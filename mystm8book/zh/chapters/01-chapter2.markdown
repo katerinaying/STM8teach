@@ -7,7 +7,7 @@
 
 
 如果不过瘾的话，[这里](http://coolshell.cn/articles/945.html)，还有[这里](http://coolshell.cn/articles/873.html)，都可以让你比较深入的去思考，同时相信类似的这些问题在你今后找工作的面试中一定碰得到，除非你不做程序员。
-如果说上述的问题并没有
+这些
 
 
 
