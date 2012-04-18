@@ -1,7 +1,7 @@
 \contentsline {chapter}{前言}{i}{chapter*.1}
 \contentsline {chapter}{目录}{iii}{section*.3}
-\contentsline {chapter}{\numberline {1}使用C语言开发}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}一个测试}{1}{section.1.1}
+\contentsline {chapter}{\numberline {1}重读C语言}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}一个小测试}{1}{section.1.1}
 \contentsline {chapter}{\numberline {2}用Markdown来写}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}标准书稿的组成}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}怎么从Markdown到书}{3}{section.2.2}

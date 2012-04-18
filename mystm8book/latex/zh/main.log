@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.2-0.9995.2 (TeX Live 2009/Debian) (format=xelatex 2012.4.18)  18 APR 2012 14:54
+This is XeTeX, Version 3.1415926-2.2-0.9995.2 (TeX Live 2009/Debian) (format=xelatex 2012.4.18)  18 APR 2012 15:07
 entering extended mode
  %&-line parsing enabled.
 **latex/zh/main.tex
@@ -478,18 +478,18 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 ut line 181.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+ [1
 
-Overfull \hbox (12.50137pt too wide) in paragraph at lines 220--221
+
+
+]
+Overfull \hbox (12.50137pt too wide) in paragraph at lines 222--223
 []\EU1/ARPLSungtiLGB(0)/m/n/10 本 次 STM8 学 习 项 目 托 管 在 github 
 上， 并 且 项 目 完 全 开 源。 欢 迎 大 家 访 问：[][]www.git
 hub.com/
  []
 
-[1
-
-
-
-] [2] (latex/zh/main.toc
+[2] (latex/zh/main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -510,14 +510,14 @@ Chapter 1.
 ]
 Chapter 2.
 [3] [4]
-Overfull \hbox (2.30148pt too wide) in paragraph at lines 359--360
+Overfull \hbox (2.30148pt too wide) in paragraph at lines 363--364
 []\EU1/ARPLSungtiLGB(0)/m/n/10 一 般 缺 省 中 文 正 文 字 体 是 宋 
 体、 细 明 体， 对 应 英 文 Serif 类 的 英 文 字 体： Georgia�
 ��Times
  []
 
 
-Overfull \hbox (45.73477pt too wide) in paragraph at lines 361--362
+Overfull \hbox (45.73477pt too wide) in paragraph at lines 365--366
 []\EU1/ARPLSungtiLGB(0)/m/n/10 标 题 和 重 要 内 容 可 以 选 楷 体 
 和 黑 体， 对 应 英 文 Sans Serif 类 的 英 文 字 体： Arial、Ta
 homa、Verdana
@@ -531,11 +531,11 @@ Chapter 3.
 \openout3 = `main.fot'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 385.
+(Font)              <8> on input line 389.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 385.
+(Font)              <6> on input line 389.
  [7] [8] [9] [10] [11] [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 659--659
+Underfull \hbox (badness 10000) in paragraph at lines 663--663
 []\EU1/WenQuanYiZenHeiMono(0)/m/n/8 \begin{itemize} \setlength{\itemsep} {1pt} 
 \setlength{\parskip} {0pt} \setlength{\parsep} {0pt}
  []
@@ -545,7 +545,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 659--659
 ]
 Chapter 4.
 
-Overfull \hbox (32.90115pt too wide) in paragraph at lines 692--693
+Overfull \hbox (32.90115pt too wide) in paragraph at lines 696--697
 []\EU1/ARPLSungtiLGB(0)/m/n/10 首 先 书 的 内 容 是 用 Markdown 格 式
  写 的。Markdown 格 式 的 普 及 要 归 功 于[][]Github[][]和[][]Sta
 ckOverflow[][]。
@@ -555,10 +555,10 @@ ckOverflow[][]。
 Here is how much of TeX's memory you used:
  9954 strings out of 495724
  158501 string characters out of 1189346
- 268884 words of memory out of 3000000
+ 267884 words of memory out of 3000000
  12937 multiletter control sequences out of 15000+50000
  5655 words of font info for 44 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 53i,13n,92p,772b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,13n,92p,721b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on latex/zh/main.pdf (23 pages).
