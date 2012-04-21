@@ -1,11 +1,13 @@
 # STM8芯片资源简介 #
 一般来说，学习的时候可以用芯片功能强大一点，具体开发产品的时候可以根据官方给的[选型指南](http://www.st.com/internet/com/SALES_AND_MARKETING_RESOURCES/MARKETING_COMMUNICATION/MARKETING_BROCHURE/brstm8.pdf)，来选择对应的芯片。本手册选用的是STM8S208MB芯片，它具有：
->>>最大24Mhz的运行速率
->>>80个引脚（其中68个可用作IO引脚）
->>>37个外部中断引脚
->>>128K可编程Flash，2MB的EEPROM
->>>6KB的RAM
->>>并拥有CAN总线接口……
+最大24Mhz的运行速率
+80个引脚（其中68个可用作IO引脚）
+37个外部中断引脚
+128K可编程Flash，2MB的EEPROM
+6KB的RAM
+并拥有CAN总线接口……
 但是价格却只有15元左右（这个已经算是高端产品，低端的STM8S103F2系列只有2，3元左右）完全秒杀AVR相同性能的单片机。
 
-！[芯片的电路图](/figures/circuit_diagram.jpg)
+![芯片的电路图](figures/circuit_diagram.jpg)
+
+

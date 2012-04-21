@@ -13,9 +13,9 @@
 
 
 
-下面是一些开发方面的问题：你有没有使用vim写过一个50行以上的小程序？你有没有使用过gcc编译，再用gdb调试过程序？你有没有写过一个makefile，写好程序后敲一个make，编译、测试、安装或者更多的东西一键搞定。当然如果作为大的软件项目来说，版本控制系统自然是少不了的，那么你有没有使用过Git、CVS、SVN之类的工具，对项目的代码checkin、checkoout、merge、revert？
 
-关于进一步学习C语言的资料，我推荐下列三本书：[《C程序设计语言》](http://product.china-pub.com/14975&ref=browse)、[《C专家编程》]http://product.china-pub.com/38005)、[《C陷阱与缺陷》](http://product.china-pub.com/38125)。一般来说，以《C程序设计语言》为基础，然后凭借后面两本书，知道C语言平时使用中一些容易犯错的地方。当然，如果你觉得还不够的话，以下这篇文章可能会适合你：[如何学好C语言](http://coolshell.cn/articles/4102.html)。
+
+关于进一步学习C语言的资料，我这里推荐下列三本书：[《C程序设计语言》](http://product.china-pub.com/14975&ref=browse)、[《C专家编程》]http://product.china-pub.com/38005)、[《C陷阱与缺陷》](http://product.china-pub.com/38125)。一般来说，以《C程序设计语言》为基础，然后凭借后面两本书，知道C语言平时使用中一些容易犯错的地方。当然，如果你觉得还不够的话，以下这篇文章可能会适合你：[如何学好C语言](http://coolshell.cn/articles/4102.html)。
 
 
 
