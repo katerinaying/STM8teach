@@ -1,8 +1,0 @@
-;	STMicroelectronics dependencies file
-
-[Version]
-Keyword=ST7Project
-Number=1.3
-
-[Root.STM8S_EVAL...\..\..\..\utilities\stm8s_eval\stm8s_eval.c.Config.0]
-ExternDep=  ..\..\..\..\utilities\stm8s_eval\stm8s_eval.c  D:\COSMIC\CXSTM8_32K\HSTM8\modsl0.h  ..\..\..\..\utilities\stm8s_eval\stm8s_eval.h
