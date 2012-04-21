@@ -296,6 +296,11 @@ Next=Root.Source Files.stm8_interrupt_vector.c
 [Root.Source Files.stm8_interrupt_vector.c]
 ElemType=File
 PathName=stm8_interrupt_vector.c
+Next=Root.Source Files.stm8s_conf.h
+
+[Root.Source Files.stm8s_conf.h]
+ElemType=File
+PathName=stm8s_conf.h
 Next=Root.Source Files.stm8s_it.c
 
 [Root.Source Files.stm8s_it.c]

@@ -44,7 +44,7 @@ ptn_Child33=Bar-32
 
 [WorkState_v1_2.DockState.Bar-0]
 BarID=59419
-Bars=20
+Bars=22
 Bar#0=0
 Bar#1=59647
 Bar#2=0
@@ -65,6 +65,8 @@ Bar#16=0
 Bar#17=32768
 Bar#18=0
 Bar#19=0
+Bar#20=0
+Bar#21=0
 Style=0
 ExStyle=0
 PrevFloating=False
@@ -327,7 +329,7 @@ ResourceID=0
 
 [WorkState_v1_2.DockState.Bar-8]
 BarID=59647
-MRUWidth=412
+MRUWidth=250
 Docking=True
 MRUDockID=59419
 MRUDockLeftPos=-1
@@ -345,12 +347,12 @@ AutoHide=False
 AutoHidePinned=False
 LastAlignedDocking=0
 PctWidth=1000000
-MRUFloatCX=429
-MRUFloatCY=27
+MRUFloatCX=267
+MRUFloatCY=54
 MRUHorzDockCX=1366
 MRUHorzDockCY=31
-MRUVertDockCX=72
-MRUVertDockCY=527
+MRUVertDockCX=126
+MRUVertDockCY=438
 MRUDockingState=0
 DockingStyle=61440
 TypeID=14947
@@ -726,7 +728,7 @@ Docking=True
 MRUDockID=0
 MRUDockLeftPos=1
 MRUDockTopPos=-2
-MRUDockRightPos=151
+MRUDockRightPos=337
 MRUDockBottomPos=438
 MRUFloatStyle=4
 MRUFloatXPos=-1
@@ -743,7 +745,7 @@ MRUFloatCX=300
 MRUFloatCY=180
 MRUHorzDockCX=300
 MRUHorzDockCY=180
-MRUVertDockCX=150
+MRUVertDockCX=336
 MRUVertDockCY=440
 MRUDockingState=0
 DockingStyle=61440
@@ -1022,7 +1024,7 @@ MRUFloatCX=300
 MRUFloatCY=180
 MRUHorzDockCX=300
 MRUHorzDockCY=180
-MRUVertDockCX=150
+MRUVertDockCX=336
 MRUVertDockCY=180
 MRUDockingState=0
 DockingStyle=61440
@@ -1240,6 +1242,6 @@ ptn_Child2=ChildFrames
 
 [WorkState_v1_2.Frames.MainFrame]
 WindowPlacement=MCAAAAAACAAAAAAADAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPHLAAAAAAEHAAAAAAEGEAAAAADBDAAAAA
-Title=ST Visual Develop - Project.stw*
+Title=ST Visual Develop - Project.stw
 
 [WorkState_v1_2.Frames.ChildFrames]

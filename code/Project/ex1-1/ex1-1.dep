@@ -1,0 +1,20 @@
+;	STMicroelectronics dependencies file
+
+[Version]
+Keyword=ST7Project
+Number=1.3
+
+[Root.Source Files.main.c.Config.0]
+ExternDep= main.c D:\COSMIC\CXSTM8_32K\Hstm8\mods0.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s.h  stm8s_conf.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_clk.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_gpio.h
+
+[Root.Source Files.stm8_interrupt_vector.c.Config.0]
+ExternDep= stm8_interrupt_vector.c  D:\COSMIC\CXSTM8_32K\Hstm8\mods0.h stm8s_it.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s.h  stm8s_conf.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_clk.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_gpio.h
+
+[Root.Source Files.stm8s_it.c.Config.0]
+ExternDep= stm8s_it.c D:\COSMIC\CXSTM8_32K\Hstm8\mods0.h stm8s_it.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s.h  stm8s_conf.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_clk.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_gpio.h
+
+[Root.StdPeriph_Drivers...\..\libraries\stm8s_stdperiph_driver\src\stm8s_clk.c.Config.0]
+ExternDep= ..\..\libraries\stm8s_stdperiph_driver\src\stm8s_clk.c  D:\COSMIC\CXSTM8_32K\Hstm8\mods0.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_clk.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s.h  stm8s_conf.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_gpio.h
+
+[Root.StdPeriph_Drivers...\..\libraries\stm8s_stdperiph_driver\src\stm8s_gpio.c.Config.0]
+ExternDep= ..\..\libraries\stm8s_stdperiph_driver\src\stm8s_gpio.c  D:\COSMIC\CXSTM8_32K\Hstm8\mods0.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_gpio.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s.h  stm8s_conf.h  C:\Users\laser\git\STM8teach\code\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_clk.h
