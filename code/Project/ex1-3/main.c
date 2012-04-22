@@ -58,7 +58,7 @@ void clkInit(void)
 void gpioInit(void)
 {
 	GPIO_Init(GPIOA,GPIO_PIN_1,GPIO_MODE_OUT_PP_LOW_FAST);
-	GPIO_Init(GPIOB,GPIO_PIN_1,GPIO_MODE_IN_FL_NO_IT);
+	GPIO_Init(GPIOB,GPIO_PIN_1,GPIO_MODE_IN_FL_IT);
 }
 void delay(u16 count)
 {

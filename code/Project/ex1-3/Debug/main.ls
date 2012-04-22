@@ -48,8 +48,8 @@
  196  0022 ae5000        	ldw	x,#20480
  197  0025 cd0000        	call	_GPIO_Init
  199  0028 85            	popw	x
- 200                     ; 61 	GPIO_Init(GPIOB,GPIO_PIN_1,GPIO_MODE_IN_FL_NO_IT);
- 202  0029 4b00          	push	#0
+ 200                     ; 61 	GPIO_Init(GPIOB,GPIO_PIN_1,GPIO_MODE_IN_FL_IT);
+ 202  0029 4b20          	push	#32
  203  002b 4b02          	push	#2
  204  002d ae5005        	ldw	x,#20485
  205  0030 cd0000        	call	_GPIO_Init
