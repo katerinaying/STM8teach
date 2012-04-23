@@ -22,3 +22,12 @@ As the limit of both time and capability, it need your help!
 
 *...
 
+
+# HOWTOCONTACTME#
+*
+MAILTO:laser5295@gmail.com
+
+*TEL:+86 15121017292
+
+
+
