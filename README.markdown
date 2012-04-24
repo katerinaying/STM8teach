@@ -1,3 +1,5 @@
+# STM8 TEACH#
+
 ## INTRODUCTION ##
 This project is set to give an self-teach guide for STM8 learners.
 
@@ -23,11 +25,10 @@ As the limit of both time and capability, it need your help!
 *...
 
 
-## HOWTOCONTACTME ##
+## HOW TO CONTACT ME ##
 
 *MailAddress:laser5295@gmail.com
 
-*PHONE:+86 15121017292
-
+*QQ:479610214
 
 
