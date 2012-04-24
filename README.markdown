@@ -1,10 +1,12 @@
 # STM8 TEACH#
 
+#### A project which will give a self-teach guide for STN8 learner. ####
+
 ## INTRODUCTION ##
-This project is set to give an self-teach guide for STM8 learners.
+STM8 is popular for it's cheap price and high performance. This is a project which will give breif introduction about the develop methods of STM8. 
 
 ## HOW TO PARTICIPATE THIS PROJECT ##
-As the limit of both time and capability, it need your help!
+As the limit of both time and capability, what I have done seems
 
 ### Related Software or Tools ###
 *The schematic and pcb board:Altium
