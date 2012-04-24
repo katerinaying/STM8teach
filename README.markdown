@@ -15,14 +15,20 @@ As the limit of both time and capability, I think there must be some mistakes or
 *code
 
 *Markdown_1.0.1
+
 *mystm8book
+
 *paper
+
 *pcbLib
+
 *pre
+
 *resource
+
 *stm8core
+
 *STM8reference
-*VEDIO
 
 ### Related Software or Tools ###
 *The schematic and pcb board:Altium
