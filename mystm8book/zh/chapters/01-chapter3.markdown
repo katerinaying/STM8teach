@@ -8,6 +8,8 @@ Git是一种版本控制工具，之前出现的比较著名的有SVN、CVS、Cl
 如果是第一次安装，配置环境的图文教程可以在<http://help.github.com/win-set-up-git/>找到。同时[Github的帮助网站](http://help.github.com/)上面有关于Git的详细帮助。
 当然如果需要系统的学习一下子，[《PROGIT》](http://progit.org/)这本书就是一个比较详尽的教程。
 
+## 重新认识IDE ##
+IDE的全称是： **I**ntegrated **D**evelopment **E**nvironment
 
 ## 对开源本身的思考 ##
 

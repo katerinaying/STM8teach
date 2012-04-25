@@ -1,19 +1,31 @@
 \BOOKMARK [0][-]{chapter*.1}{前言}{}% 1
 \BOOKMARK [0][-]{chapter*.2}{目录}{}% 2
 \BOOKMARK [0][-]{chapter.1}{1 重读C语言}{}% 3
-\BOOKMARK [1][-]{section.1.1}{1.1 一个小测试}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.1}{1.1 C语言的那些事}{chapter.1}% 4
 \BOOKMARK [1][-]{section.1.2}{1.2 声明与定义}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.3}{1.3 关于union}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.4}{1.4 悬垂else}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.5}{1.5 static的作用}{chapter.1}% 8
 \BOOKMARK [0][-]{chapter.2}{2 软件开发那点事}{}% 9
-\BOOKMARK [1][-]{section.2.1}{2.1 使用GitHub来管理你的项目}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{2.2 关于Makefile}{chapter.2}% 11
-\BOOKMARK [0][-]{chapter.3}{3 STM8芯片简介}{}% 12
-\BOOKMARK [1][-]{section.3.1}{3.1 STM8的优势}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.2}{3.2 STM8编程——寄存器or库函数？}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.3}{3.3 芯片资源简介}{chapter.3}% 15
-\BOOKMARK [0][-]{chapter.4}{4 STM8官方软件库简介}{}% 16
-\BOOKMARK [1][-]{section.4.1}{4.1 STM8官方软件库}{chapter.4}% 17
-\BOOKMARK [0][-]{chapter.5}{5 STM8编程实战}{}% 18
-\BOOKMARK [1][-]{section.5.1}{5.1 实验一跑马灯}{chapter.5}% 19
+\BOOKMARK [1][-]{section.2.1}{2.1 使用Git来管理你的项目}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.2}{2.2 重新认识IDE}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.3}{2.3 对开源本身的思考}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.4}{2.4 关于Makefile}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.5}{2.5 其它参考}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{3 STM8芯片简介}{}% 15
+\BOOKMARK [1][-]{section.3.1}{3.1 STM8的优势}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{3.2 STM8编程——寄存器or库函数？}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.3}{3.3 芯片资源简介}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{4 STM8编程实战之基础篇}{}% 19
+\BOOKMARK [1][-]{section.4.1}{4.1 STM8官方库函数简介}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.2}{4.2 时钟}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 时钟树}{section.4.2}% 22
+\BOOKMARK [1][-]{section.4.3}{4.3\040GPIO}{chapter.4}% 23
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 GPIO的几种状态}{section.4.3}% 24
+\BOOKMARK [1][-]{section.4.4}{4.4 中断}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.5}{4.5 计时器}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{5 STM8编程实战之提高篇}{}% 27
+\BOOKMARK [1][-]{section.5.1}{5.1\040USART}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.2}{5.2\040SPI}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.3}{5.3\040TWI}{chapter.5}% 30
+\BOOKMARK [0][-]{chapter.6}{6 STM8资源补遗}{}% 31
