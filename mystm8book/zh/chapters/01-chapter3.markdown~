@@ -8,8 +8,18 @@ Git是一种版本控制工具，之前出现的比较著名的有SVN、CVS、Cl
 如果是第一次安装，配置环境的图文教程可以在<http://help.github.com/win-set-up-git/>找到。同时[Github的帮助网站](http://help.github.com/)上面有关于Git的详细帮助。
 当然如果需要系统的学习一下子，[《PROGIT》](http://progit.org/)这本书就是一个比较详尽的教程。
 
-## 重新认识IDE ##
-IDE的全称是： *I*ntegrated _D_ evelopment _E_ nvironment
+## 说说IDE ##
+平时经常可以听到IDE，这个名字。那么IDE到底是什么呢？
+IDE的全称是： **I**ntegrated **D**evelopment **E**nvironment。我们平时写程序，无外乎编辑——编译——连接的过程，出故障了也许要做软/硬件单步调试。IDE给我们写程序，提供了上面这个流程中，所需要的一切。51上的KEIL，AVR上的ICC、CVAVR、IAR，都是IDE。
+
+### IDE的优势 ###
+我们大量使用IDE，是有原因的：
+一方面IDE的安装使用极其方便，网上下好一路next即可，所有需要的工具都在里面，不许要用户自行去寻找。另一方面，IDE所提供的程序经过较好的测试，稳定性更高些。
+
+### IDE的不足 ###
+
+
+#### 尝试着脱离IDE吧 ####
 
 ## 对开源本身的思考 ##
 
