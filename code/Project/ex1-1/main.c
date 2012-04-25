@@ -22,6 +22,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm8s.h"
+#include "delay.h"
 
 /* Private defines -----------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
@@ -29,7 +30,6 @@
 
 void clkInit(void);
 void gpioInit(void);
-void delay(u16);
 void main(void)
 {
 	clkInit();
@@ -38,7 +38,7 @@ void main(void)
   while (1)
   {
 		GPIO_WriteReverse(GPIOA,GPIO_PIN_1);
-		delay(0xFFFF);
+		delay_ms(1000);
   }
  
 }
@@ -47,7 +47,7 @@ void clkInit(void)
 {
 	CLK_DeInit();
 	CLK_HSICmd(ENABLE);
-	CLK_SYSCLKConfig(CLK_PRESCALER_HSIDIV8);
+	CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV2);
 }
 void gpioInit(void)
 {
