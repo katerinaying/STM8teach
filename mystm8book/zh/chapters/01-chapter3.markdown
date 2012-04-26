@@ -21,7 +21,7 @@ IDE的全称是： **I**ntegrated **D**evelopment **E**nvironment。我们平时
 ### IDE的不足 ###
 
 
-#### 尝试着脱离IDE吧 ####
+### 尝试着脱离IDE吧 ###
 
 ## 对开源本身的思考 ##
 
