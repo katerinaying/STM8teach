@@ -3,11 +3,11 @@
 #### Construction of STM8 Teach Platform ####
 
 ## 项目简介 ##
-STM8 is popular for its low price and high performance. As there is no good Chinese tutor for this chip. This is a project which will give a brief introduction about some develop methods of STM8.
+> STM8 is popular for its low price and high performance. As there is no good Chinese tutor for this chip. This is a project which will give a brief introduction about some develop methods of STM8.
 Although it is a STM8 teach guide, it introduce some software developing methods which will behave a good benefit to the chip developing. 
 
 ## 怎样参与该项目 ##
-As the limit of both time and capability, I think there must be some mistakes or something really important I don't mention. I hope when you read the mamual, you can help me improve it. I will appreciate with your help.
+> As the limit of both time and capability, I think there must be some mistakes or something really important I don't mention. I hope when you read the mamual, you can help me improve it. I will appreciate with your help.
 
 
 ### 目录结构 ###
@@ -34,6 +34,8 @@ As the limit of both time and capability, I think there must be some mistakes or
 > 手册: Written by Markdown, but there is a little different form the GITHUB version, you can get related support from [**here**](http://www.github.com/larrycai/kaiyuanbook)
 
 > 封面: I use COREDRAW X6 to make this cover, picture was token in East China Normal University.
+
+
 ## THINGS HAS BEEN DONE ##
 
 ## TODOLIST ##
@@ -42,7 +44,7 @@ As the limit of both time and capability, I think there must be some mistakes or
 
 > 完成学习手册
 
-*...
+> *...
 
 
 ## 联系方式 ##
