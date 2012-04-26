@@ -3,11 +3,12 @@
 #### Construction of STM8 Teach Platform ####
 
 ## 项目简介 ##
-> STM8 is popular for its low price and high performance. As there is no good Chinese tutor for this chip. This is a project which will give a brief introduction about some develop methods of STM8.
-Although it is a STM8 teach guide, it introduce some software developing methods which will behave a good benefit to the chip developing. 
+> STM8性能很强大，但是缺少对应的教材。ST的英文文档各种多，看得比较累。空下来就想，如果能有本教材就好了。毕设选题时，因为自己也做过一些研发类的项目，想换种形式，想到了这件事，就决定干脆自己写本册子，写点相关的内容。
+> 在惠普以及爱立信的实习过程中，我接触了很多软件方面好用的工具，成熟的软件工程思想。比如说git，就是非常好的版本控制管理软件，比如说agile，消除了传统软件开发过程中的部分问题。我觉得，软件开发中的诸多问题，随着编程规模的扩大，参与人数的增多，在硬件开发中也会逐步地体现出来。所以，这些工具及思想方式引入到嵌入式编程，将是一种趋势。本手册亦不指望能够引领什么潮流，只希望能对STM8的学习者，有一个有益的指导，仅此而已。
+ 
 
 ## 怎样参与该项目 ##
-> As the limit of both time and capability, I think there must be some mistakes or something really important I don't mention. I hope when you read the mamual, you can help me improve it. I will appreciate with your help.
+> 由于时间和能力的限制，所以我对现在完成的内容还深感不足。
 
 
 ### 目录结构 ###
@@ -31,14 +32,14 @@ Although it is a STM8 teach guide, it introduce some software developing methods
 ### 相关软件及工具 ###
 > 原理图及PCB图:Altium
 
-> 手册: Written by Markdown, but there is a little different form the GITHUB version, you can get related support from [**here**](http://www.github.com/larrycai/kaiyuanbook)
+> 手册: 手册编写格式是MARKDOWN, 但是这个与GITHUB所支持的MARKDOWN格式有一些区别。具体的格式说明可以从<http://www.github.com/larrycai/kaiyuanbook>获得。
 
-> 封面: I use COREDRAW X6 to make this cover, picture was token in East China Normal University.
+> 封面: 因为喜欢排版，就自己设计了一个。封面封底的图片都是取景自华师大校园的风景，本手册封面、封底都是使用COREDRAW设计的。
 
 
-## THINGS HAS BEEN DONE ##
+## 完成之事 ##
 
-## TODOLIST ##
+## 待做之事 ##
 
 > 完成资源板设计
 > > 加点阵模块
@@ -53,6 +54,6 @@ Although it is a STM8 teach guide, it introduce some software developing methods
 
 > Emaill地址:laser5295@gmail.com
 
-> QQ:479610214
+> QQ:肆79陆10贰14
 
 
