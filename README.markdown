@@ -12,15 +12,15 @@ Although it is a STM8 teach guide, it introduce some software developing methods
 
 ### 目录结构 ###
 
-> code：STM8学习范例
+> code：STM8学习手册配套例程；
 
-> mystm8book：开源STM8手册
+> mystm8book：开源STM8手册；
 
-> paper
+> paper：本人本科毕业论文，因一些特殊原因2012年7月之前处于加密状态。7月之后如果有需要，我会解除密码限制；
 
-> pcbLib：资源板与核心版的pcb库
+> pcbLib：资源板与核心版的pcb库；
 
-> pre
+> pre：手册的封面，以及曾经写过的几篇开题报告；
 
 > resource：资源板原理图；
 
@@ -41,10 +41,12 @@ Although it is a STM8 teach guide, it introduce some software developing methods
 ## TODOLIST ##
 
 > 完成资源板设计
+> > 加点阵模块
+> > 加蜂鸣器模块
 
 > 完成学习手册
 
-> *...
+> ...
 
 
 ## 联系方式 ##
