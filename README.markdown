@@ -12,31 +12,29 @@ As the limit of both time and capability, I think there must be some mistakes or
 
 ### 目录结构 ###
 
-*code：STM8学习范例
+> code：STM8学习范例
 
-*mystm8book：开源STM8手册
+> mystm8book：开源STM8手册
 
-*paper
+> paper
 
-*pcbLib：资源板与核心版的pcb库
+> pcbLib：资源板与核心版的pcb库
 
-*pre
+> pre
 
-*resource：资源板原理图；
+> resource：资源板原理图；
 
-*stm8core：STM8S208MB核心版原理图以及PCB；
+> stm8core：STM8S208MB核心版原理图以及PCB；
 
-*STM8reference：在此可以找到关于该芯片的一些参考文档。
+> STM8reference：在此可以找到关于该芯片的一些参考文档。
 
 ### 相关软件及工具 ###
-*原理图及PCB图:Altium
+> 原理图及PCB图:Altium
 
-*手册: Written by Markdown, but there is a little different form the GITHUB version, you can get related support from [**here**](http://www.github.com/larrycai/kaiyuanbook)
+> 手册: Written by Markdown, but there is a little different form the GITHUB version, you can get related support from [**here**](http://www.github.com/larrycai/kaiyuanbook)
 
-*封面: I use COREDRAW X6 to make this cover, picture was token in East China Normal University.
+> 封面: I use COREDRAW X6 to make this cover, picture was token in East China Normal University.
 ## THINGS HAS BEEN DONE ##
-
-*STM8核心板.
 
 ## TODOLIST ##
 
@@ -49,8 +47,8 @@ As the limit of both time and capability, I think there must be some mistakes or
 
 ## 联系方式 ##
 
-*EMaill地址:laser5295@gmail.com
+> EMaill地址:laser5295@gmail.com
 
-*QQ:479610214
+> QQ:479610214
 
 
