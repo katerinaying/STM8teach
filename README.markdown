@@ -51,7 +51,7 @@ Although it is a STM8 teach guide, it introduce some software developing methods
 
 ## 联系方式 ##
 
-> EMaill地址:laser5295@gmail.com
+> Emaill地址:laser5295@gmail.com
 
 > QQ:479610214
 
