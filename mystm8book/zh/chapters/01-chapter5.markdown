@@ -12,14 +12,11 @@
 我们要找的库函数文件在<http://www.st.com/internet/com/SOFTWARE_RESOURCES/SW_COMPONENT/FIRMWARE/stm8_stdperiph_lib.zip>。这个库函数适用于STM8S以及STM8A的芯片
 
 
+
 ## 使用STVP建立自己的工程文件 ##
 这节写的比较纠结，因为IDE的东西，操作说得太絮叨了。如果可以的话，根据上节所讲的知识，自己试试看建立自己的工程文件吧。
 
 ## COSMIC编译器 ##
-
-## 使用STVP建立自己的工程文件 ##
-这节写的比较纠结，因为IDE的东西，操作说得太絮叨了。如果可以的话，根据上节所讲的知识，自己试试看建立自己的工程文件吧。
-
 
 在这个案例开始前，我们必须要清楚STM8的时钟以及GPIO。
 
@@ -29,9 +26,13 @@
 分为Fmaster、Fcpu
 
 Master时钟源有四种选择:
+
 *1-24MHz高速外加晶振震荡时钟源（HSE）
+
 *低于24Mhz一个外加时钟频率信号（HSE user-ext）
+
 *芯片自带的一个16MHz高速RC震荡时钟源（HSI）
+
 *芯片自带的一个128KHz低速RC震荡时钟源（LSI）
 
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (TeX Live 2011) (format=xelatex 2011.12.22)  26 APR 2012 00:10
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (TeX Live 2011) (format=xelatex 2011.12.22)  26 APR 2012 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -822,63 +822,69 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 4.
-)
+ [3
+
+])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [3
-
-] [4
-
-]
+ [4]
 Chapter 1.
 [1
 
+
 ] [2]
 Chapter 2.
+
+Overfull \hbox (29.60104pt too wide) in paragraph at lines 337--338
+[]\EU1/ARPLSungtiLGB(0)/m/n/10 如 果 是 第 一 次 安 装， 配 置 环 �
+�� 的 图 文 教 程 可 以 在[][]$[][][][] [] [] [] [][][][] [] [][][][][]
+[] [] [][][] [] [][][][][][][][][][][][][][][][][][]$[][]找
+ []
+
 [3
 
-] [4
-
-]
+] [4]
 Chapter 3.
 
 LaTeX Font Warning: Font shape `EU1/ARPLSungtiLGB(0)/m/it' undefined
-(Font)              using `EU1/ARPLSungtiLGB(0)/m/n' instead on input line 355.
+(Font)              using `EU1/ARPLSungtiLGB(0)/m/n' instead on input line 371.
 
 
 File: figures/circuit_diagram.jpg Graphic file (type QTm)
-<use  "figures/circuit_diagram.jpg" > [5] [6]
+<use  "figures/circuit_diagram.jpg" > [5
+
+] [6]
 Chapter 4.
 [7
 
-] [8
-
-]
+] [8]
 Chapter 5.
-[9] [10
+[9
+
+] [10
 
 ]
 Chapter 6.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 402.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 446.
 [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 402.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 446.
  (latex/zh/main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 402.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 402.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 446.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 446.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 402.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 446.
  ) 
 Here is how much of TeX's memory you used:
- 17372 strings out of 494150
- 287945 string characters out of 3152948
- 411173 words of memory out of 3000000
- 20422 multiletter control sequences out of 15000+200000
+ 17374 strings out of 494150
+ 287969 string characters out of 3152948
+ 411831 words of memory out of 3000000
+ 20424 multiletter control sequences out of 15000+200000
  3816 words of font info for 36 fonts, out of 3000000 for 9000
  1018 hyphenation exceptions out of 8191
- 53i,12n,92p,639b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,12n,92p,639b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on latex/zh/main.pdf (15 pages).
